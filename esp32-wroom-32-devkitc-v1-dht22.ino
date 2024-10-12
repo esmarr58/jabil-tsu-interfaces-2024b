@@ -1,3 +1,10 @@
+/*
+Arduino   v1.8.19  ok
+ESP32     v3.0.5   ok
+DHT Sensor library v1.4.6 by Adafruit
+
+  */
+
 #include "DHT.h"
 
 #define DHTPIN 4     // Pin digital conectado al sensor DHT
