@@ -11,6 +11,10 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    if (serialActual != nullptr && serialActual->isOpen()) {
+        serialActual->close();
+        delete serialActual;
+    }
     delete ui;
 }
 
